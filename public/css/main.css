@@ -1,0 +1,149 @@
+header {
+    background: url("../img/header.jpg");
+    background-size: cover;
+    height: 75vh;
+    opacity: 0.85;
+}
+
+.fondo-blanco {
+    background: rgba(255, 255, 255, .7);
+}
+
+nav {
+    background-color: #00171F;
+    color: white;
+}
+
+.linea {
+    border-bottom: 2px solid #00A8E8;
+    padding-bottom: 15px!important;
+    color: #00171F!important;
+}
+
+.linea-2 {
+    border-bottom: 2px solid #ffff;
+    padding-bottom: 15px!important;
+    color: #ffff!important;
+}
+
+.skills {
+    background: #007EA7;
+}
+
+.contact {
+    background: #003459;
+}
+
+.portafolio {
+    background: white;
+}
+
+nav ul li a {
+    text-decoration: none!important;
+    transition: all ease-in-out .3s;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+footer {
+    background-color: #00171F;
+}
+
+body {
+    background: #003459;
+}
+
+a i {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.git {
+    color: white;
+}
+
+.git:hover {
+    color: black;
+}
+
+.git-2 {
+    color: black;
+}
+
+.git-2:hover {
+    color: rgb(77, 2, 130);
+}
+
+.web {
+    color: black;
+}
+
+.web:hover {
+    color: blue;
+}
+
+.link {
+    color: white;
+}
+
+#inicio {
+    text-decoration: none!important;
+}
+
+.imgs {
+    position: relative!important;
+}
+
+.imgs:hover::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 30% 0;
+    text-align: center;
+    background: rgba(255, 255, 255, .7);
+    content: "\f00e";
+    color: #007EA7!important;
+    display: block!important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.zoom a {
+    cursor: zoom-in;
+}
+
+#slide_nav_button {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white!important;
+}
+
+@media (max-width: 767px) {
+    #slide_menu {
+        display: none;
+    }
+    #slide_menu li a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .logodev {
+        font-size: 1.5rem;
+        padding-top: 0.7rem!important;
+    }
+}
+
+#error {
+    display: none;
+}
+
+#nice {
+    display: none;
+}

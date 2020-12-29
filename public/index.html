@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManuelDevs</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/07d0a13d68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+
+<body class="w-100">
+
+    <header>
+        <div class="container-fluid h-100">
+            <div id="header" class="row h-100">
+                <div data-aos="zoom-in" data-aos-duration="1500" class="col-12 py-5 fondo-blanco h-auto text-center align-self-center">
+                    <h1>Manuel Puente</h1>
+                    <h5>Desarrollador JavaScript</h5>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class=" sticky-top ">
+        <div class="container">
+            <div class="row">
+                <div id='slide_nav' class="col-10 col-md-4 p-md-2 pt-2">
+                    <a id="inicio" class="lead text-white" href="#">
+                        <h3 data-aos="fade-right" data-aos-anchor="#port" data-aos-offset="300" data-aos-duration="1000" class="text-white logodev p-1 text-center rounded-pill text-md-left"> Manuel Puente <span class="lead">Dev</span></h3>
+                    </a>
+                </div>
+                <p class=" col-2 p-md-2 pt-2 d-md-none text-center" id="slide_nav_button">☰</p>
+                <div class="col-12 col-md-8">
+                    <ul id='slide_menu' class=" mb-0 text-center px-0 text-md-right  ">
+                        <li class="d-block d-md-inline-block p-3"><a class="lead p-2 text-white" id="portafolio" href="#">Portafolio</a></li>
+                        <li class="d-block d-md-inline-block p-3"><a class="lead p-2 text-white" id="skill" href="#">Habilidades</a></li>
+                        <li class="d-block d-md-inline-block p-3"><a class="lead p-2 text-white" id="contact" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 portafolio py-5">
+                    <h2 id="port" class="text-center py-2 linea my-4">Portafolio</h2>
+                    <div class="row zoom justify-content-center">
+                        <a class="col-md-5 col-12 mx-4 my-3 p-2 imgs shadow" data-toggle="modal" data-target="#agencia">
+                            <div>
+                                <img class="img-fluid" src="img/agencia.jpg" alt="">
+                            </div>
+                        </a>
+                        <a class="col-md-5 col-12 mx-4 my-3 p-2 imgs shadow" data-toggle="modal" data-target="#portafoli">
+                            <div>
+                                <img class="img-fluid" src="img/portafolios.jpg" alt="">
+                            </div>
+                        </a>
+
+                        <a class="col-md-7 col-12 mx-4 my-3 p-2 imgs shadow" data-toggle="modal" data-target="#sm">
+                            <div>
+                                <img class="img-fluid" src="img/sm.jpg" alt="">
+                            </div>
+                        </a>
+                        <a class="col-md-5 col-12 mx-4 my-3 p-2 imgs shadow" data-toggle="modal" data-target="#cafe">
+                            <div>
+                                <img class="img-fluid" src="img/cafe.jpg" alt="">
+                            </div>
+                        </a>
+                        <a class="col-md-5 col-12 mx-4 my-3 p-2 imgs shadow" data-toggle="modal" data-target="#angel">
+                            <div>
+                                <img class="img-fluid" src="img/angel.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="skilss" class="col-12 py-5 skills">
+                    <h2 class="text-center py-4 linea-2 my-4">Habilidades</h2>
+                    <div class="row  justify-content-center">
+                        <div class="col-md-3 col-4 mx-4 my-3 p-2 text-center ">
+                            <img class="img-fluid rounded-lg " id="html" width="150px" src="img/html.svg" alt="">
+                        </div>
+                        <div class="col-md-3 col-4 mx-4 my-3 p-2 text-center ">
+                            <img class="img-fluid rounded-lg " id="CSS" width="150px" src="img/css.svg" alt="">
+                        </div>
+                        <div class="col-md-3 col-4 mx-4 my-3 p-2 text-center ">
+                            <img class="img-fluid rounded-lg " id="JavaScript" width="150px" src="img/js.svg" alt="">
+                        </div>
+                        <div class="col-md-3 col-4 mx-4 my-3 p-2 text-center ">
+                            <img class="img-fluid rounded-lg " id="Jquery" width="150px" src="img/jquery.svg" alt="">
+                        </div>
+                        <div class="col-md-3 col-4 mx-4 my-3 p-2 text-center ">
+                            <img class="img-fluid rounded-lg " id="node" width="150px" src="img/node.svg" alt="">
+                        </div>
+                        <div class="col-md-3 col-4 mx-4 my-3 p-2 text-center ">
+                            <img class="img-fluid rounded-lg " id="BootsTrap" width="150px" src="img/bootstrap.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 py-4 contact">
+                    <h2 id="contacto" class="text-center py-2 linea-2 my-4">Contacto</h2>
+                    <div class="row  justify-content-center">
+                        <div class="col-md-8 col-12 ">
+                            <form id="FormContact" action="">
+                                <input class="form-control form-control-lg my-4" id="nombre" type="text" placeholder="Nombre">
+                                <input class="form-control form-control-lg my-4" id="email" type="email" placeholder="Correo">
+                                <input class="form-control form-control-lg my-4" id="cell" type="tel" placeholder="Celular">
+                                <textarea class="form-control form-control-lg my-4" id="msg" id="mensaje" placeholder="Mensaje" rows="3"></textarea>
+                                <div class="alert alert-success" id="nice" role="alert">
+                                </div>
+                                <div class="alert alert-danger" id="error" role="alert">
+                                </div>
+                                <button type="button" id="FormBtn" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-12 pt-5 text-center">
+                            <a class="mx-3 git" href="https://github.com/Manuelp1345"><i class="fab fa-github"></i></a>
+                            <a class="mx-3 link" href="https://www.linkedin.com/in/manuel-puente-148091142/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 ">
+                    <p class="text-center text-white font-weight-bolder p-2 mb-0">Desarrollado y diseñado por ManuelDev. © 2020. Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="agencia" tabindex="-1" aria-labelledby="agenciaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title " id="agenciaLabel">Midrey´s Viajes y Turismo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid border" src="img/agencia.jpg" alt="">
+                    <h4>Pagina para agencia de viajes </h4>
+                    <p>Tecnologias utilizadas: HTML, BootsTrap</p>
+                    <div class="col-12 text-center">
+                        <a class="mx-3 git-2 " href="https://github.com/Manuelp1345/agencia"><i class="fab fa-github"></i></a>
+                        <a class="mx-3 web " href="https://midreysviajesyturismo.web.app/"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="portafoli" tabindex="-1" aria-labelledby="portafoliLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title " id="portafoliLabel">Practica Portafolio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid border" src="img/portafolios.jpg" alt="">
+                    <h4>Practica de un portafolios </h4>
+                    <p>Tecnologias utilizadas: HTML, CSS</p>
+                    <div class="col-12 text-center">
+                        <a class="mx-3 git-2 " href="https://github.com/Manuelp1345/Practica-Portafolio"><i class="fab fa-github"></i></a>
+                        <a class="mx-3 web " href="https://manueldev-porfatolio.netlify.app/"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sm" tabindex="-1" aria-labelledby="smLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title " id="smLabel">Restaurante Santos Manjares</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid border" src="img/sm.jpg" alt="">
+                    <h4>Pagina web para Santos Manjares </h4>
+                    <p>Tecnologias utilizadas: HTML, CSS, JavaScript/Jquery</p>
+                    <div class="col-12 text-center">
+                        <a class="mx-3 git-2 " href="https://github.com/Manuelp1345/Santos-Manjares"><i class="fab fa-github"></i></a>
+                        <a class="mx-3 web " href="https://santos-manjares.vercel.app/"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cafe" tabindex="-1" aria-labelledby="cafeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title " id="cafeLabel">Practica Diseño Para Un Cafe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid border" src="img/cafe.jpg" alt="">
+                    <h4>Practica Web de Cafe </h4>
+                    <p>Tecnologias utilizadas: HTML, CSS, JavaScript/Jquery</p>
+                    <div class="col-12 text-center">
+                        <a class="mx-3 git-2 " href="https://github.com/Manuelp1345/Practica-Restaurante"><i class="fab fa-github"></i></a>
+                        <a class="mx-3 web " href="https://manueldev-cafe.netlify.app/"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="angel" tabindex="-1" aria-labelledby="angelLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title " id="angelLabel">Practica Girl Shop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid border" src="img/angel.jpg" alt="">
+                    <h4>Pagina web Girl Shop </h4>
+                    <p>Tecnologias utilizadas: HTML, CSS, BootsTrap</p>
+                    <div class="col-12 text-center">
+                        <a class="mx-3 git-2 " href="https://github.com/Manuelp1345/GirlsShop"><i class="fab fa-github"></i></a>
+                        <a class="mx-3 web " href="https://girlshop.netlify.app/#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src=" js/bootstrap.bundle.min.js "></script>
+<script src="js/bootstrap.min.js "></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyAGC08cJZRr8lixi4Pr8QzKMDyUpX7a7ow",
+        authDomain: "manueldev.firebaseapp.com",
+        projectId: "manueldev",
+        storageBucket: "manueldev.appspot.com",
+        messagingSenderId: "134377015724",
+        appId: "1:134377015724:web:737da99f33aaa9219b1209",
+        measurementId: "G-HK9NQL0QNN"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+<script src="js/main.js"></script>
+
+
+
+</html>
