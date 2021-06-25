@@ -1,149 +1,176 @@
 header {
-    background: url("../img/header.jpg");
-    background-size: cover;
-    height: 75vh;
-    opacity: 0.85;
+  background: url("../img/bg.jpg");
+  background-size: cover;
+  height: 91.9vh;
+  position: relative;
+}
+.blur {
+  width: 100%;
+  height: 91.9vh;
+  background: rgba(86, 86, 86, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .fondo-blanco {
-    background: rgba(255, 255, 255, .7);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 nav {
-    background-color: #00171F;
-    color: white;
+  background-color: #00171f;
+  color: white;
 }
 
 .linea {
-    border-bottom: 2px solid #00A8E8;
-    padding-bottom: 15px!important;
-    color: #00171F!important;
+  border-bottom: 2px solid #00a8e8;
+  padding-bottom: 15px !important;
+  color: #00171f !important;
 }
 
 .linea-2 {
-    border-bottom: 2px solid #ffff;
-    padding-bottom: 15px!important;
-    color: #ffff!important;
+  border-bottom: 2px solid #ffff;
+  padding-bottom: 15px !important;
+  color: #ffff !important;
 }
 
 .skills {
-    background: #007EA7;
+  background: #007ea7;
+  height: 100vh;
 }
 
 .contact {
-    background: #003459;
+  height: 90vh;
+  background: #003459;
 }
 
 .portafolio {
-    background: white;
+  background: white;
+  height: 100vh;
+  width: 100%;
 }
 
 nav ul li a {
-    text-decoration: none!important;
-    transition: all ease-in-out .3s;
-    border-bottom: 2px solid transparent;
+  text-decoration: none !important;
+  transition: all ease-in-out 0.3s;
+  border-bottom: 2px solid transparent;
 }
 
-nav ul li a:hover {
-    border-bottom: 2px solid white;
+.active {
+  border-bottom: 2px solid white;
 }
 
 footer {
-    background-color: #00171F;
+  background-color: #00171f;
 }
 
 body {
-    background: #003459;
+  background: #003459;
 }
 
 a i {
-    font-size: 2rem;
-    text-decoration: none;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 .git {
-    color: white;
+  color: white;
 }
 
 .git:hover {
-    color: black;
+  color: black;
 }
 
 .git-2 {
-    color: black;
+  color: black;
 }
 
 .git-2:hover {
-    color: rgb(77, 2, 130);
+  color: rgb(77, 2, 130);
 }
 
 .web {
-    color: black;
+  color: black;
 }
 
 .web:hover {
-    color: blue;
+  color: blue;
 }
 
 .link {
-    color: white;
+  color: white;
 }
 
 #inicio {
-    text-decoration: none!important;
-}
-
-.imgs {
-    position: relative!important;
+  text-decoration: none !important;
 }
 
 .imgs:hover::before {
-    font-family: "Font Awesome 5 Free";
-    font-size: 2rem;
-    font-weight: 900;
-    padding: 30% 0;
-    text-align: center;
-    background: rgba(255, 255, 255, .7);
-    content: "\f00e";
-    color: #007EA7!important;
-    display: block!important;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.zoom a {
-    cursor: zoom-in;
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 30% 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  content: "\f00e";
+  color: #007ea7 !important;
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 #slide_nav_button {
-    font-size: 2rem;
-    cursor: pointer;
-    color: white!important;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white !important;
 }
 
 @media (max-width: 767px) {
-    #slide_menu {
-        display: none;
-    }
-    #slide_menu li a {
-        font-size: 1.3rem;
-    }
+  #slide_menu {
+    display: none;
+  }
+  #slide_menu li a {
+    font-size: 1.3rem !important;
+  }
+  .preview {
+    display: none !important;
+  }
 }
 
 @media (max-width: 991px) {
-    .logodev {
-        font-size: 1.5rem;
-        padding-top: 0.7rem!important;
-    }
+  .logodev {
+    font-size: 1.5rem;
+    padding-top: 0.7rem !important;
+  }
 }
 
 #error {
-    display: none;
+  display: none;
 }
 
 #nice {
-    display: none;
+  display: none;
+}
+.slider {
+  right: 30px;
+  bottom: 50px;
+}
+.preview {
+  margin: 0 35px;
+}
+.preview img {
+  width: 60px;
+  margin: 0 10px;
+  opacity: 0.4;
+}
+.preview .activeBar {
+  display: block;
+  border: 3px solid #000;
+  width: 100px;
+  opacity: 1;
+  animation: fadeIn;
+  animation-duration: 2s;
 }
